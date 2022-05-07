@@ -1,5 +1,5 @@
 # Sales-Forecast---Time-Series-Forecast
-#Overview
+*Overview
 
 Forecasting is perhaps the most common application of machine learning in the real world. Sales forecasting is an important problem in the e-commerce industry. Forecasting the sales of items helps businesses make better and informed decisions. 
 Here we are working on the sales data of a grocery store from the country of Ecuador. The model aims at accurately predicting the unit sales for thousand of items sold across all the stores. High accuracy in the results is important because if the model predicts a little over, the stores get overstocked with perishable goods, and if it predicts a little under, the items quickly sell out, with disappointed customers.
