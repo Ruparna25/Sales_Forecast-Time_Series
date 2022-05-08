@@ -7,5 +7,20 @@ Here we are working on the sales data of a grocery store from the country of Ecu
 ### Dataset
 
 This dataset has been taken from Kaggle competition held by the Corporación Favorita organization. The training data includes dates, stores, and product information, whether that item was being promoted, as well as the sales numbers. In addition to this there were some other supporting files containing data related to holiday events across the year and oil prices for the country over years. This information can help us build a robust model for forecasting that considers the trend, seasonality from the historical data of four years. This is a multivariate time series problem.
-* Trend derived from the sales data –
-a.	Trend captured by taking moving average over window of 365 days -
+
+**Trend derived from the Sales data**
+* Trend captured by taking moving average over window of 365 days -
+
+![image](https://github.com/Ruparna25/Sales-Forecast---Time-Series-Forecast/blob/main/images/year_window.png)
+
+**Seasonality captured from the Sales data**
+
+Seasonality derived from the sales data
+
+* Impact of different kinds of seasonality derived from the dataset –
+
+![image](https://github.com/Ruparna25/Sales-Forecast---Time-Series-Forecast/blob/main/images/Periodgram.png)
+
+### Design
+
+
