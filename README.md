@@ -21,6 +21,10 @@ Seasonality derived from the sales data
 
 ![image](https://github.com/Ruparna25/Sales-Forecast---Time-Series-Forecast/blob/main/images/Periodgram.png)
 
+**Autocorrelation Plot for the Sales data**
+
+![image](https://github.com/Ruparna25/Sales-Forecast---Time-Series-Forecast/blob/main/images/ACF.png)
+
 ### Design
 
 
