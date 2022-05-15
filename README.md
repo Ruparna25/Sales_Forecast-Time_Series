@@ -31,10 +31,15 @@ Seasonality derived from the sales data
 
 ### Design
 
-Based on the above plots we extracted the features like week, month, quarter, year to capture the time series trend along with other important features. Different lag features were added to capture the autocorrelation (commonly used serial dependence), is the correlation between a time series’ current value with past values. Also, moving average of different windows are used as feature to capture data trend. All these features were combined with the features already present in the dataset to train the model. 
+Based on the above plots we extracted the features like week, month, quarter, year to capture the time series trend along with other important features. Different lag features were added to capture the autocorrelation (commonly called serial dependence), is the correlation between a time series current value with past values. Also, moving average of different windows are used as feature to capture data trend. All these features were combined with the features already present in the dataset to train the model. 
 
 3 different models were trained to observe how each performs against the other – 
 1.	ARIMA
 2.	LGBM
-3.	LSTM
+
+For training the LGBM model, batch of data were used and these batches were identified based on the type of training window passed to the model. There were two types of windows defined one being the sliding window and another being the expanding window. Example of sliding window and expanding window is given below - 
+
+![image](https://github.com/Ruparna25/Sales-Forecast---Time-Series-Forecast/blob/main/images/window_lgbm.JPG)
+
+4.	LSTM
 
