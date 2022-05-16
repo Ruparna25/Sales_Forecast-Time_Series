@@ -41,5 +41,6 @@ For training the LGBM model, batch of data were used and these batches were iden
 
 ![image](https://github.com/Ruparna25/Sales-Forecast---Time-Series-Forecast/blob/main/images/window_lgbm.JPG)
 
-4.	LSTM
+3.	LSTM
 
+Used TimeseriesGenerator class to create training sequence and test sequences. Used a 3-layered LSTM model with the last layer being a Dense Layer to predict the sales price for any given day. The model was trained by fit_generator function of TimeseriesGenerator class. Evaluation metrics used was MSE (Mean squared error)
