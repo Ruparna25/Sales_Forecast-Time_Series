@@ -34,13 +34,33 @@ Seasonality derived from the sales data
 Based on the above plots we extracted the features like week, month, quarter, year to capture the time series trend along with other important features. Different lag features were added to capture the autocorrelation (commonly called serial dependence), is the correlation between a time series current value with past values. Also, moving average of different windows are used as feature to capture data trend. All these features were combined with the features already present in the dataset to train the model. 
 
 3 different models were trained to observe how each performs against the other – 
-1.	ARIMA
-2.	LGBM
+1.	**ARIMA**
+
+Model trained on Moving Average calculated based on different window sizes - 7(weekly), 30(monthly) and 365(annual) days. 
+
+2.	**LGBM**
 
 For training the LGBM model, batch of data were used and these batches were identified based on the type of training window passed to the model. There were two types of windows defined one being the sliding window and another being the expanding window. Example of sliding window and expanding window is given below - 
 
 ![image](https://github.com/Ruparna25/Sales-Forecast---Time-Series-Forecast/blob/main/images/window_lgbm.JPG)
 
-3.	LSTM
+3.	**LSTM**
 
-Used TimeseriesGenerator class to create training sequence and test sequences. Used a 3-layered LSTM model with the last layer being a Dense Layer to predict the sales price for any given day. The model was trained by fit_generator function of TimeseriesGenerator class. Evaluation metrics used was MSE (Mean squared error)
+Used TimeseriesGenerator class to create training sequence and test sequences. Used a 3-layered LSTM model with the last layer being a Dense Layer to predict the sales price for any given day. The model was trained by fit_generator function of TimeseriesGenerator class. Evaluation metrics used was MSE (Mean squared error).
+
+### Performance
+
+Below is the Performance data of different models tried -
+1. **ARIMA**
+
+RMSE obtained from each window size is shown below -
+
+<img src='https://github.com/Ruparna25/Sales-Forecast---Time-Series-Forecast/blob/main/images/ARIMA.png' width=500, height=300>
+
+2. **LGBM**
+
+RMSE scores for both sliding and expanding type of window training -
+
+<img src='https://github.com/Ruparna25/Sales-Forecast---Time-Series-Forecast/blob/main/images/LGBM.png' width=400, height=300>
+
+
