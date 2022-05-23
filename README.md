@@ -1,4 +1,4 @@
-# Sales-Forecast---Time-Series-Forecast
+# Sales_Forecast-Time-Series-Forecast
 ### Overview
 
 Forecasting is perhaps the most common application of machine learning in the real world. Sales forecasting is an important problem in the e-commerce industry. Forecasting the sales of items helps businesses make better and informed decisions. 
